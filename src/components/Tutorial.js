@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Background, Tooltip } from './Commons'
 
 export class Tutorial extends React.Component {
@@ -45,12 +46,12 @@ export class Tutorial extends React.Component {
 }
 
 Tutorial.propTypes = {
-  clear: React.PropTypes.func,
-  on: React.PropTypes.string,
-  children: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      id: React.PropTypes.string,
-      text: React.PropTypes.string,
+  clear: PropTypes.func,
+  on: PropTypes.string,
+  children: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      text: PropTypes.string,
     })
   ),
 }

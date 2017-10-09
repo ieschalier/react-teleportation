@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { capitalize as c } from 'lodash'
 import styled from 'styled-components'
 import { Background, H1, P } from './Commons'
@@ -49,14 +50,14 @@ export const Alert = ({ title, description, right, left }) => (
 )
 
 Alert.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired,
-  right: React.PropTypes.shape({
-    title: React.PropTypes.string.isRequired,
-    action: React.PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  right: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    action: PropTypes.func.isRequired,
   }),
-  left: React.PropTypes.shape({
-    title: React.PropTypes.string.isRequired,
-    action: React.PropTypes.func.isRequired,
+  left: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    action: PropTypes.func.isRequired,
   }),
 }

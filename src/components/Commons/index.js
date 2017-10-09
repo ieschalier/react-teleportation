@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 export const fontFamily = 'Noto, Roboto, sans-serif'
@@ -53,6 +54,6 @@ export const Tooltip = ({ style, children }) => (
 )
 
 Tooltip.propTypes = {
-  style: React.PropTypes.shape({}),
-  children: React.PropTypes.node,
+  style: PropTypes.shape({}),
+  children: PropTypes.node,
 }

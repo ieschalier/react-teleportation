@@ -18,9 +18,10 @@
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "lodash": "^4.17.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "styled-components": "^1.0.8"
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-components": "^2.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",

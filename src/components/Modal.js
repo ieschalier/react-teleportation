@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Background, fontFamily } from './Commons'
 
@@ -26,6 +27,6 @@ export const Modal = ({ children, clear }) => {
 }
 
 Modal.propTypes = {
-  children: React.PropTypes.node,
-  clear: React.PropTypes.func,
+  children: PropTypes.node,
+  clear: PropTypes.func,
 }

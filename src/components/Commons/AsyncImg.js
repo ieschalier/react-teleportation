@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const isImg = b => (b.type.match(/image/) ? { img: URL.createObjectURL(b) } : false)
@@ -30,8 +31,8 @@ export class AsyncImg extends React.Component {
 }
 
 AsyncImg.propTypes = {
-  src: React.PropTypes.string,
-  alt: React.PropTypes.string,
-  role: React.PropTypes.string,
-  style: React.PropTypes.shape({}),
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  role: PropTypes.string,
+  style: PropTypes.shape({}),
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Background, Img } from './Commons'
 
 export const Lightbox = ({ clear, url }) => {
@@ -13,10 +14,10 @@ export const Lightbox = ({ clear, url }) => {
 }
 
 Lightbox.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 }
 
 Lightbox.propTypes = {
-  clear: React.PropTypes.func,
-  url: React.PropTypes.string,
+  clear: PropTypes.func,
+  url: PropTypes.string,
 }
